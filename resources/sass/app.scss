@@ -1,0 +1,22 @@
+// GENERAL
+@import 'partials/vars';
+@import 'partials/commons';
+@import 'partials/utilities';
+@import 'partials/animations';
+
+
+// SECTION
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/fixed';
+
+
+// PAGES
+@import 'partials/home';
+@import 'partials/about';
+@import 'partials/projects';
+@import 'partials/download';
+@import 'partials/contacts';
+@import 'partials/404';
+@import 'partials/admin';
+

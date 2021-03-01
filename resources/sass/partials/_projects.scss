@@ -1,0 +1,96 @@
+.projects {
+    background: $white;
+    // height: 600px; // debug
+
+    &--reverse {
+        background: color(bg-dark);
+    }
+
+    .project__description {
+        font-size: 1.1rem;
+        line-height: 1.5;
+
+        &--tool {
+            color: color(bold);
+            font-weight: 700;
+        }
+    }
+
+    .project__github {
+        a {
+            text-decoration: none;
+
+            i {
+                padding-right: .5rem;
+                animation-duration: .6s;
+                animation-name: translateXX;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                color: color(titles);
+            }
+        }
+    }
+}
+
+.portfolio__line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+}
+
+.portfolio__icons__list {
+    display: flex;
+    // justify-content: center;
+    text-align: center;
+
+    & .portfolio__icons__item {
+        margin-top: 2.5rem;
+        margin-right: .5rem;
+
+        @include desktop {
+            margin-right: 1rem;
+        }
+
+        & i {
+            font-size: 3rem;
+        }
+    }
+}
+
+.portfolio__line--reverse {
+    flex-direction: row-reverse;
+    background: color(bg-dark);
+    // flex-wrap: wrap;
+}
+
+.portfolio__box__img {
+    margin-top: 4rem;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+// MEDIA QUERY
+.portfolio__line {
+
+    @include desktop {
+        flex-wrap: nowrap;
+
+        .portfolio__box__text {
+            flex-basis: 40%;
+        }
+            
+        .portfolio__box__img {
+            flex-basis: 40%;
+            margin-top: 2rem;
+        }
+    }
+}

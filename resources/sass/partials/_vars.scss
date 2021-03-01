@@ -1,0 +1,22 @@
+// COLORS
+$white: #fff;
+
+
+$colors: (
+  text: #707070,
+  titles: #313D4D,
+  bold: #00D7BE,
+  active:#FF005D,
+  // BACK-GROUND
+  bg-dark: #f9f9f9
+);
+
+// FONT FAMILY
+$main-font: 'Lato';
+
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+

@@ -1,0 +1,44 @@
+.footer {
+
+    &__upper {
+        background: color(bold);
+        color: $white;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding: 3rem 0;
+
+            p {
+                font-size: 1.1rem;
+                max-width: 70% ;
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .btn__secondary--footer {
+            padding: .6rem 1.8rem;
+            font-size: 1.1rem;
+            margin: 2rem auto .5rem;
+            box-shadow: none;
+        }
+    }
+
+    &__bottom {
+        background: color(titles);
+        // height: 95px;
+        padding: 1rem;
+
+        h4 {
+            text-align: center;
+            color: rgba($white, .6);
+            font-weight: 400;
+        }
+    }
+}
+

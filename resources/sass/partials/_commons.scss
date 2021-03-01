@@ -1,0 +1,219 @@
+// SET UP
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// MEDIA QUERY
+$desktop: 992px;
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+// TYPOGARPHY
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+body {
+    font-family: $main-font, sans-serif;
+    color: color(text);
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 5rem 1rem;
+}
+
+// TYPOGRAPHY
+h1 {
+    font-size: 2.4rem;
+    color: color(titles);
+    font-weight: 400;
+    text-shadow: 1px 1px 2px color(titles);
+
+    @include desktop {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: color(titles);
+    text-shadow: .5px .5px 2px color(titles);
+
+    @include desktop {
+        font-size: 2.4rem;
+    }
+}
+
+.h2 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+    &--bold {
+        font-weight: 700;
+
+    }
+
+    @include desktop {
+        font-size: 1.5rem;
+    }
+}
+
+
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: .8rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: color(titles);
+
+    @include desktop {
+        font-size: 1.5rem;
+        margin-top: .6rem;
+    }
+}
+
+.h3 {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.t-upper {
+    text-transform: uppercase;
+}
+
+.t-unline {
+    text-decoration: underline;
+}
+
+.t-center {
+    text-align: center;
+}
+
+// TEXT COLORS
+.tc-titles {
+    color: color(titles);
+}
+
+.tc-text {
+    color: color(text);
+}
+
+.tc-bold {
+    color: color(bold);
+}
+
+.tc-bold--shad {
+    color: color(bold);
+    text-shadow: 1px 1px 2px color(bold);
+}
+
+.tc-bold--bold {
+    color: color(bold);
+    font-weight: 700;
+}
+
+.tc-titles--bold {
+    color: color(titles);
+    font-weight: 700;
+}
+
+
+.tc-active {
+    color: color(active);
+}
+
+// LAYOUT
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.container--small {
+    max-width: 992px;
+    margin: auto;
+}
+
+.height-default {
+    min-height: 50vh;
+
+    @include desktop {
+        min-height: 750px;
+    }
+}
+
+
+// SPACING
+.m-1 {
+    margin: 1rem;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mt-6 {
+    margin-top: 6rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+
+// TRANSITIONS
+@mixin transition-ease {
+    transition: all .4s ease-in-out;
+}
+
+@mixin transition-ease-fast {
+    transition: all .2s ease-in-out;
+}
+
+@mixin transition-none {
+    transition: none;
+}
+
+// MEDIA QUERY
+$desktop: 992px;
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop}) {
+    @content;
+  }
+}
+

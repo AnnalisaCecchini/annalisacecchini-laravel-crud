@@ -1,0 +1,32 @@
+@keyframes changefw {
+    0% {
+      font-weight: 400;
+    }
+    50% {
+      font-weight: 700;
+    }
+    75% {
+        font-weight: 400;
+    }
+    100% {
+        font-weight: 700;
+      }
+}
+
+@keyframes translateYY {
+    0% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes translateXX {
+  0% {
+      transform: translateX(-10x);
+  }
+  100% {
+      transform: translateX(-3px);
+  }
+}

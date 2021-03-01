@@ -1,0 +1,32 @@
+.admin {
+    position: relative;
+
+    h1, 
+    h3{
+        text-align: center;
+    }
+
+    .logout {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+
+    & .contacts__item {
+        padding: 1rem;
+        border: 1px solid color(text);
+        border-radius: 5px;
+        width: 90%;
+        margin: 0 auto .5rem ;
+
+        @include desktop {
+            width: 80%;
+        }
+
+        &__label {
+            font-weight: 700;
+        }
+    }
+}
+
